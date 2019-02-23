@@ -24,7 +24,6 @@ def AND(left, right):
     return left and right
 
 def INDEX(arr, y, x):
-    print(arr, x, y)
     new = arr[x-1]
     return new[y-1]
 
@@ -80,7 +79,7 @@ class Cell:
             new_val = re.sub("([^=])=([^=])", r"\1==\2", new_val)
             res = eval(new_val, globs())
             # print(self.value)
-            print(f"[{self.pos}] ={new_val} |=> {res}")
+            # print(f"[{self.pos}] ={new_val} |=> {res}")
             return res
         return self.value
 
