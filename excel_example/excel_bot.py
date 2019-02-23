@@ -81,9 +81,4 @@ class ExcelAgent(BaseAgent):
         for k, v in inputs.items():
             self.model[k] = v
         
-        print("Not opponent closer than car:", self.model["F42"].evaluate())
-        print("Car in defensive:", self.model["G42"].evaluate())
-        print("Res:", self.model["K33"].evaluate())
-        print("Chosen action:", self.model["M33"].evaluate())
-        
         return self.get_out()
